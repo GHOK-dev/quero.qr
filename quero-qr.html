@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quero.qr Agradece</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos globais e cores */
+        body {
+            /* Cor de fundo: #ebf1ff */
+            background-color: #ebf1ff;
+            /* Garante que o corpo ocupa toda a altura da janela de visualização */
+            min-height: 100vh;
+            /* Centraliza o conteúdo (usado para responsividade) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            /* Aplica a fonte Josefin Sans */
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+            padding: 20px;
+            /* Adiciona um pequeno padding para garantir espaço nas bordas */
+            box-sizing: border-box;
+            /* Garante que o padding não afete a largura total */
+        }
+
+        /* Estilo para a caixa de mensagem principal */
+        .container {
+            /* Cor de fundo da caixa de mensagem: #b1c7f6 */
+            background-color: #b1c7f6;
+            /* Cor da fonte: #061050 */
+            color: #061050;
+            padding: 40px 30px;
+            /* Espaçamento interno */
+            border-radius: 15px;
+            /* Cantos arredondados */
+            /* Max width para não ficar muito largo em telas grandes */
+            max-width: 90%;
+            width: 500px;
+            /* Largura base para telas menores/médias */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Sombra suave */
+        }
+
+        /* Estilo para o texto de agradecimento */
+        .message {
+            font-size: 1.8em;
+            /* Tamanho da fonte grande */
+            font-weight: 500;
+            /* Peso da fonte (semiboldo) */
+            line-height: 1.4;
+            /* Espaçamento entre linhas */
+            margin: 0;
+        }
+
+        /* Responsividade: Ajustes para telas menores (celulares) */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                /* Reduz o padding em telas pequenas */
+                max-width: 95%;
+                /* Ocupa quase toda a largura em celulares */
+            }
+
+            .message {
+                font-size: 1.5em;
+                /* Reduz um pouco o tamanho da fonte em celulares */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="message">
+            A equipe do **Quero.qr** agradece pela atenção!
+        </p>
+    </div>
+</body>
+
+</html>
